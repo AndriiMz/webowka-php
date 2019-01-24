@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Comfy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/dom.js"></script>
+    <script src="assets/app.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="wrapper">
+            <div class="row" style="align-items: center;">
+                <div>
+                    <img src="assets/logo.svg" alt="comfy" />
+                </div>
+                <div>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="catalog.html">
+                                    Catalog
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#categories">
+                                    Kategorie
+                                </a>
+                            </li>
+                            <li>
+                                <a href="info.html">
+                                    Informacje
+                                </a>
+                            </li>
+                            <li>
+                                <form id="search">
+                                    <input type="search" name="q"
+                                           placeholder="Search the site..."
+                                           aria-label="Search through site content">
+                                    <button>Search</button>
+                                </form>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div >
+                    <a class="btn btn-primary-inv" href="login.html">
+                        Zaloguj
+                    </a>
+                    <a class="btn btn-primary-inv" href="registration.html">
+                        Rejestracja
+                    </a>
+                    <a class="btn btn-primary-inv" href="registration-advanced.html">
+                        Ankieta
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Navigation Bar -->
+    <div class="categories-navbar">
+        <div class="wrapper">
+            <div class="dropdown">
+                <span>Laptopy</span>
+                <div class="dropdown-content">
+                    <a href="#">Telefony</a>
+                    <a href="#">Drukarki</a>
+                    <a href="#">Laptopy</a>
+                </div>
+            </div>
+            <a href="#">Telefony</a>
+            <a href="#">Drukarki</a>
+            <a href="#">Laptopy</a>
+        </div>
+    </div>
+    <!-- Content -->
+    <div class="wrapper">
+        <article class="row">
+            <section class="side">
+                <h3>Specjalne propozycje</h3>
+                <ul class="products-list">
+                    <li>
+                        <a href="item.html">
+                            <img src="assets/img1.jpg" alt="Laptop Asus" class="item-img"/>
+                            <h4>Laptop ASUS </h4>
+                        </a>
+                        <span>3000,- zł</span>
+                    </li>
+                    <li>
+                        <a href="item.html">
+                            <img src="assets/img2.jpg" alt="Laptop Asus" class="item-img"/>
+                            <h4>Laptop ASUS </h4>
+                        </a>
+                        <span>3000,- zł</span>
+                    </li>
+                </ul>
+                <div style="text-align: center">
+                    <a href="assets/price.pdf" download class="btn btn-primary">
+                        Pobiez cennik
+                    </a>
+                    <a href="mailto:klienci@comfy.com" class="btn btn-success">
+                        Skontaktuj się
+                    </a>
+
+                </div>
+            </section>
+            <section class="main">
+                <section id="main-loading">
+                    <div class="spinner-anim">
+                        <div class="bounce1"></div>
+                        <div class="bounce2"></div>
+                        <div class="bounce3"></div>
+                    </div>
+                </section>
+                <section id="main-body" style="display: none">
+                    <div id="hero" class="hero">
+                        <h1 id="hero-title-1">Niskie ceny = COMFY&trade;</h1>
+                    </div>
+                    <section id="categories">
+                        <h2>Kategorie produktów</h2>
+                        <ol>
+                            <li>Laptopy</li>
+                            <li>Telefony</li>
+                            <li>Drukarki</li>
+                            <li>Laptopy</li>
+                            <li>Telefony</li>
+                            <li>Drukarki</li>
+                            <li>Laptopy</li>
+                            <li>Telefony</li>
+                            <li>Drukarki</li>
+                        </ol>
+                    </section>
+                    <section id="pricing">
+                        <table class="delivery-price-table">
+                            <thead>
+                                <tr>
+                                    <th>Suma zakupów</th>
+                                    <th>Platnosc dostawy</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>&lt; 1000 zł</td>
+                                    <td>
+                                        <table class="kurier-price-table" >
+                                            <thead>
+                                            <tr>
+                                                <th>Kurier</th>
+                                                <th>Cena</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>PDP</td>
+                                                    <td>20 zł</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>UPS</td>
+                                                    <td>30 zł</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>FedEx</td>
+                                                    <td>15 zł</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+
+                                    <td>> 1000 zł</td>
+                                    <td rowspan="2">darmowa</td>
+                                </tr>
+                                <tr>
+                                    <td>Lokalizacja - Wrocław</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Cena dostawy jest wyliczana po zakupach</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section class="item">
+                        <div class="row">
+                            <div>
+                                <img src="assets/img1.jpg" class="item-img" alt="Laptop asus"/>
+                            </div>
+                            <div>
+                                <h1>Laptop Asus</h1>
+                                <p>
+                                    Przedsiębiorcy w dobie otwartej konkurencji ciągle wymyślają nowe i lepsze
+                                    taktyki dla swoich produktów. Konsumenci coraz częściej spotykają się z
+                                    opisami z najwyższej półki. Jest to zabieg celowy, który ma skłonić
+                                    potencjalnego klienta do zakupu. Czy istnieje idealny opis produktu?
+                                    Przykładów jest wiele – zostały one stworzone według konkretnych zasad.
+
+                                </p>
+                                <table>
+                                    <tbody>
+                                    <tr>
+                                        <td>Ekran</td>
+                                        <td>13"</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Processor</td>
+                                        <td>Core 2 duo</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pamięć RAM</td>
+                                        <td>4G</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <div >
+                                <h4>Ocena:</h4>
+                                    <meter value="30" max="100" low="10" high="60">Normalny</meter>
+                                    <span>2/5</span>
+                                </div>
+                                <h2><span id="item-price">3000</span>,- zł</h2>
+                                <div class="btn-group">
+                                    <button class="btn btn-success" id="generate-discount">Wygraj zniżke</button>
+                                    <button class="btn btn-primary" id="add-feedback">Dodaj opinje</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <details>
+                                <summary>Opis "Laptop ASUS"</summary>
+                                <p> Przedsiębiorcy w dobie otwartej konkurencji ciągle wymyślają nowe i lepsze
+                                    taktyki dla swoich produktów. Konsumenci coraz częściej spotykają się z
+                                    opisami z najwyższej półki. Jest to zabieg celowy, który ma skłonić
+                                    potencjalnego klienta do zakupu. Czy istnieje idealny opis produktu?
+                                    Przykładów jest wiele – zostały one stworzone według konkretnych zasad.</p>
+                            </details>
+                            <details>
+                                <summary>Opinje (<span id="feedback-count">0</span>)</summary>
+                                <div id="feedback-container"></div>
+                            </details>
+                        </div>
+                    </section>
+                    <form id="order-form">
+                        <h2>Zamowienie produktu</h2>
+                        <fieldset>
+                        <div>
+                            <label for="full-name">Imie nazwisko</label>
+                            <input type="text" id="full-name" />
+                        </div>
+                        <div>
+                            <label for="phone">Telefon</label>
+                            <input type="text" id="phone" />
+                        </div>
+                        <div class="city-form-group">
+                            <label for="city">Miasto dostawy</label>
+                            <select id="city">
+                                <optgroup label="Dolnośląskie">
+                                    <option value="1">Wroclaw</option>
+                                </optgroup>
+                                <optgroup label="Wielkopolskie">
+                                    <option value="2">Poznan</option>
+                                </optgroup>
+                            </select>
+                            <div id="city-help" style="display: none">Jak nie ma twojego miasta na liscie skontaktuj sie z nami</div>
+                        </div>
+                        <div>
+                            <label for="options">Dodatkowe opcje</label>
+                            <input type="checkbox" name="options" id="options" value="1">Zapakowac jako prezent<br>
+                            <input type="checkbox" name="options" value="2">Dodac notatke<br>
+                        </div>
+                        <div>
+                            <label for="payment">Platność</label>
+                            <input type="radio" name="payment" id="payment" value="1" checked> Gotówka<br>
+                            <input type="radio" name="payment" value="2"> Karta<br>
+                            <input type="radio" name="payment" value="3"> Przelew
+                        </div>
+                        <div>
+                            <label for="comment">Komentarz do zamowienia</label>
+                            <textarea id="comment"></textarea>
+                        </div>
+                        <div>
+                            <button type="reset">Wyczyść formularz</button>
+                            <button type="submit">Złóż zamówienie </button>
+                        </div>
+                        </fieldset>
+                    </form>
+                    <button class="btn btn-primary" onclick="reverseText();">
+                        Zwiększ czytelność tekstu
+                    </button>
+                    <section class="article">
+                    <aside>
+                        <p>Lider rynku o ugruntowanej pozycji</p>
+                        <p>Światowe trendy</p>
+                        <p>Więcej niż sklep</p>
+                    </aside>
+                    <article id="article-body">
+                        <h2>Comfy – lider rynku i przewodnik</h2>
+                        <h3>po świecie nowoczesnych technologii</h3>
+                        <p>
+                            <strong><mark>Comfy</mark> to jedna z najsilniejszych marek konsumenckich na rynku i pierwszy adres dla pasjonatów nowych technologii oraz osób poszukujących najszerszej oferty elektroniki użytkowej. Sieć dynamicznie rozwija się we wszystkich kanałach sprzedaży, wyznacza nowe standardy w zakresie asortymentu i jakości obsługi. Comfy wyprzedza trendy rynkowe i innowacyjnie wychodzi naprzeciw oczekiwaniom współczesnego konsumenta. Jesteśmy przewodnikiem po świecie nowoczesnych technologii.</strong>
+                        </p>
+                        <h4>Lider rynku o ugruntowanej pozycji</h4>
+                        <p>
+                            <mark>Comfy</mark> jest liderem dystrybucji elektroniki użytkowej w Europie, obecnym w 14 krajach Starego Kontynentu. Mamy ponad 35-letnie doświadczenie w branży, które pozwoliło nam zbudować gęstą sieć sprzedaży i zaistnieć we wszystkich dostępnych &nbsp;kanałach dystrybucji. Na rynku polskim działamy już od &nbsp;dwóch dekad. Jesteśmy odważni i wyraziści – wytrwale szukamy innowacyjnych rozwiązań, wyprzedzając oczekiwania naszych Klientów, a w kreowaniu wizerunku naszej marki staramy się budzić emocje, które pozytywnie zapadają w pamięć.</p>
+                        <h4>Klient w centrum uwagi</h4>
+                        <p class="columned">Kluczem do naszego sukcesu jest strategia orientacji na klienta. Nasza oferta to nie tylko bogaty asortyment najnowocześniejszych produktów, ale także albo przede wszystkim rozbudowany portfel usług i różnorodne pakiety okołosprzedażowe. Staramy się odpowiadać na wszystkie potrzeby współczesnych konsumentów, a nawet je wyprzedzać. Dlatego nieustannie poszerzamy naszą ofertę i doskonalimy standardy obsługi, aby nasi klienci chętnie do nas wracali.</p>
+                        <h4>Najszerszy asortyment</h4>
+                        <p>Wyróżnia nas kompleksowa oferta, obejmująca dziesiątki tysięcy produktów. Pełen wybór urządzeń i rozwiązań mobilnych, praktycznych i modnych akcesoriów, premierowe produkty najbardziej pożądanych marek - Comfy to prawdziwy raj dla wszystkich fanów cyfrowych technologii i innowacji. To również szeroki asortyment użytkowego sprzętu do wyposażenia domu i biura oraz produkty związane z realizacją pasji i uatrakcyjniające wolny czas.</p>
+                        <h4>Rozwój sieci sprzedaży</h4>
+                        <p>Skutecznie realizowana strategia sprzedaży wielokanałowej pozwala nam docierać z ofertą do jak najszerszego grona klientów. Sieć Comfy obejmuje obecnie ponad 60 sklepów i systematycznie rośnie. Otwieramy nowe placówki handlu tradycyjnego również w mniejszych miejscowościach. Comfy podąża za postępującą digitalizacją rynku, wprowadzając kolejne udogodnienia w systemie sprzedaży online i dostosowując go do najnowocześniejszych rozwiązań.</p>
+                        <h4>Światowe trendy</h4>
+                        <p>Modernizujemy istniejące markety, tworząc w nich innowacyjną przestrzeń według najnowszych światowych trendów w branży. Najciekawsze produkty i rozwiązania eksponujemy &nbsp;tak, aby każdy miał możliwość ich przetestowania i w ten sposób bezpośrednio zetknął się z nowoczesną technologią. Taki kontakt, jak również inspirujące aranżacje w sklepach Comfy zaspokajają oczekiwania i ciekawość najbardziej wymagających Klientów, otwartych na nowinki technologiczne.</p>
+                        <h4>Więcej niż sklep</h4>
+                        <p>Rozwój technologii rodzi kolejne potrzeby wśród konsumentów. Comfy wychodzi poza rolę typowego sklepu. Bogaty i wciąż poszerzany pakiet usług dodatkowych pozwala naszym klientom szybciej i wygodniej cieszyć się wszystkimi &nbsp;funkcjonalnościami nowo zakupionego sprzętu. W sklepach można skorzystać z fachowego doradztwa i zapoznać się z funkcjami dostępnych urządzeń. Organizowane wydarzenia specjalne i premiery produktów przyciągają szerokie grono fanów technologii.</p>
+                        <div class="article-bottom"></div>
+                    </article>
+                    <div style="clear: both"></div>
+                </section>
+                </section>
+            </section>
+        </article>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="wrapper">
+            <ul>
+                <li>
+                    <a href="catalog.html">
+                        Catalog
+                    </a>
+                    <ul>
+                        <li>Laptopy</li>
+                        <li>Telefony</li>
+                        <li>Drukarki</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="info.html">
+                        Informacje
+                    </a>
+                    <ul>
+                        <li>O Sklepie</li>
+                        <li>Platnosc</li>
+                        <li>Dostawa</li>
+                    </ul>
+                </li>
+                <li>
+                    <button class="btn btn-primary" onclick="inspect();">
+                        Zobacz elementy strony
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

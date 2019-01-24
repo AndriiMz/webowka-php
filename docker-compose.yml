@@ -1,0 +1,41 @@
+version: '3.1'
+services:
+    db:
+        build: ./docker/mysql
+        volumes:
+            - ./data/mysql:/var/lib/mysql
+            - ./data/backup:/backup
+        environment:
+            - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+            - MYSQL_DATABASE=${MYSQL_DATABASE}
+            - MYSQL_USER=${MYSQL_USER}
+            - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+            - MYSQL_VERSION=5.7
+        networks:
+            - "psw-project-net"
+        command: mysqld --sql_mode=""
+        ports:
+            - "33066:3306"
+    php:
+        build:
+            context: ./docker/php7-fpm
+            args:
+                - TIMEZONE=${TIMEZONE}
+        networks:
+            - "psw-project-net"
+        volumes:
+            - ./:/var/www/
+    nginx:
+        build: ./docker/nginx
+        networks:
+          - "psw-project-net"
+        environment:
+          - VIRTUAL_HOST=psw-test.com
+        ports:
+          - "8002:80"
+        volumes:
+            - ./:/var/www/
+            - ./logs/nginx/:/var/log/nginx
+networks:
+  psw-project-net:
+    driver: "bridge"
